@@ -54,12 +54,18 @@
 
   nav {
     width: 40rem;
+    position:relative
   }
 
   h1 {
-    display: none;
+    display:none;
   }
-
+  .img-hamburger{
+    display:inline-block;
+  }
+  .navigation-bar{
+    display:none;
+  }
   .manager-note {
     font-size: 1.8rem;
     height: 15rem;
@@ -213,14 +219,43 @@
     right: 2%;
     background-color: var(--light-green);
   }
-  .drink-buttons{
-    width:90%;
+  .drink-buttons {
+    width: 90%;
     background-color: aquamarine;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-evenly;
   }
-  .drink-buttons button{
-    width:30%;
+  .drink-buttons button {
+    width: 30%;
+  }
+
+  /* Media Query Cabinet Dish Page */
+  /* Media Query Cabinet Dish Page */
+
+  .cabinet-section, 
+  div.breakfast-section,
+  div.lunch-section{
+    margin-top: 5rem;
+    margin-left: 1.5rem;
+    display:flex;
+    flex-direction: column;
+  }
+  .cabinet-section section,
+  .breakfast-section section,
+  .lunch-section section{
+    height: 32rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem;
+  }
+
+  .cabinet-order-button {
+    background-color: var(--light-green);
+    margin-right: 7rem;
+  }
+  .cabinet-buttons button{
+    margin-left: 8rem;
   }
 }

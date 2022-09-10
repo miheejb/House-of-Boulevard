@@ -1,7 +1,8 @@
-body {
+body{
   width: 82rem;
-  height: 118rem;
+  height:100vh;
   background-color: var(--light-green);
+  color:var(--dark-green);
 }
 header {
   /* background-color: rgb(239, 239, 175); */
@@ -18,8 +19,8 @@ h1 {
   width: 40rem;
   font-size: 2rem;
   line-height: auto;
-  padding-top: 3rem;
-  padding-left: 15rem;
+  padding-top: 2rem;
+  padding-left: 7.5rem;
   font-weight: bolder;
   word-spacing: 1rem;
 }
@@ -37,6 +38,7 @@ h1 {
 }
 
 .img-hamburger {
+    display:none;
   margin-left: 15rem;
   margin-right: 0rem;
   padding-right: 0rem;
@@ -44,6 +46,20 @@ h1 {
 .img-cart {
   margin-left: 0rem;
   padding-left: 0 rem;
+}
+.navigation-bar{
+    margin-left:1rem;
+    height:4rem;
+    line-height:4rem;
+    background-color:rgb(89, 127, 89);
+    color:blanchedalmond;
+
+}
+
+.navigation-bar section:hover{
+    cursor: pointer;
+    font-weight: bold;
+    font-size:2rem;
 }
 
 .manager-note{
@@ -63,9 +79,9 @@ h1 {
     padding-top: 3rem;
     color:rgb(13, 135, 13);
 }
-.houseofboulevard-name{
- 
-    font-weight:bold;
+.houseofboulevard-name,
+.royalcustomer{
+ font-weight:bold;
 }
 .manager-signature{
     position:absolute;
@@ -135,6 +151,7 @@ h1 {
     border:5px solid salmon;
     background-color: rgb(244, 172, 164);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
 }
 
 .qr-msg {
@@ -145,7 +162,9 @@ h1 {
   margin-top: 5rem;
 }
 
+
 /*  Menu.html */
+
 
 .menu-h3 {
   text-align: center;
@@ -194,7 +213,10 @@ footer {
 
 }
 .menu-buttons button, 
-.drink-buttons button{
+.drink-buttons button,
+.cabinet-buttons button,
+.breakfast-buttons button,
+.lunch-buttons button{
   margin-left: 10.5rem;
   font-size: 1.8rem;
   font-style: lucida;
@@ -211,6 +233,7 @@ button:hover{
     border:5px solid salmon;
     background-color: rgb(240, 233, 232);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
 }
 
 /* drink page */
@@ -248,6 +271,8 @@ button:hover{
     border-radius:2rem;
     padding-bottom:2rem;
     position:relative;
+  box-shadow: 8px 8px 0 rgb(177, 182, 177);
+
 }
 .drink-h3{
     font-size: 2rem;
@@ -289,4 +314,431 @@ button:hover{
     height:3rem;
     position:absolute;
     right:7%;
+}
+
+
+/* Cabinet Dish page */
+/* Breakfast Menu page */
+/* Lunch_Dinner Menu Page */
+
+.cabinet-h1,
+.breakfast-h1,
+.lunch-h1,
+.myorder-h1{
+    width:99%;
+    text-align: center;
+    padding-left:0rem;
+}
+.cabinet-section{
+    margin-top: 5rem;
+    margin-left:1.5rem;
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows:33.3% 33.3% auto; 
+    gap:3rem;
+}
+.cabinet-section section{
+    background-color:var(--gentle-yellow);
+    height:32rem;
+    position:relative;
+  box-shadow: 8px 8px 0 rgb(177, 182, 177);
+  border-radius: 2rem;
+}
+.cabinet-section section h3,
+.breakfast-section section h3,
+.lunch-section section h3,
+.form h3{
+    padding:1.5rem;
+    text-align:center;
+    font-weight: bolder;
+}
+.cabinet-img{
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    padding-bottom:1.5rem;
+    width:20rem;
+    height:12rem;
+}
+
+/* add padding on left...  */
+.cabinet-section section p,
+.breakfast-section section p,
+.lunch-section section p{
+    width:95%
+  
+}
+.cabinet-order-button,
+.breakfast-order-button,
+.lunch-order-button{
+    margin-top:0.5rem;
+    font-size: 2rem;
+    position:absolute;
+    width: 8rem;
+    height: 3.5rem;
+    top:85%;
+    right:15%;
+    border-radius: 1rem;
+    background-color: var(--light-green);
+
+}
+
+footer{
+    margin-top:12rem;
+
+}
+/* Breakfast page */
+/* lunch dinner page */
+div.breakfast-section,
+div.lunch-section{
+    margin-top: 5rem;
+    margin-left:2.5rem;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    gap:2rem;
+}
+.breakfast-section section,
+.lunch-section section{
+    position:relative;
+    background-color: var(--gentle-yellow);
+    width:34rem;
+    height:34rem;
+    border-radius: 2rem;
+  box-shadow: 8px 8px 0 rgb(177, 182, 177);
+
+}
+.breakfast-img,
+.lunch-img{
+    width:20rem;
+    height:14rem;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+
+}
+.breakfast-section p,
+.lunch-section p{
+padding:1.5rem;
+}
+.price{
+    position:absolute;
+    top:85%;
+    right:58%;
+}
+.breakfast-order-button{
+    top:82%;
+    right:27%;
+}
+/* Lunch - Dinner page */
+
+.lunch-img{
+    width:20rem;
+    height:14rem;    
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+
+}
+.lunch-section section{
+    height:33rem;
+}
+
+.lunch-section section .price{
+    position:absolute;
+    top:87%;
+    right:58%;
+}
+.lunch-section section .lunch-order-button{
+    position:absolute;
+    top:83%;
+    right:30%;
+}
+
+
+/* myorder page */
+/* myorder page */
+table{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:1.5rem;
+    width: 60%;
+    height:13rem;
+    margin-top: 3rem;
+    justify-content: center;
+    border: 2px solid var(--darker-green);
+    text-align: center;
+
+}
+.main-myorder h3{
+text-align: center;
+}
+th,
+tfoot{
+    height:2rem;
+    font-weight: bold;
+    background-color: rgb(165, 204, 165);
+    border:1px solid var(--darker-green);
+    text-align: center;
+}
+
+.instruction{
+    width: 60%;
+    height:28rem;
+    margin-top:8rem;
+    margin-right:auto;
+    margin-left:auto;
+    background-color: rgb(165, 204, 165);
+    border: 1px soild var(--medium-green);
+    border-radius: 2rem;
+}
+.instruction h3{
+    text-align: center;
+    padding-top:1.5rem;
+    padding-bottom:1.5rem;
+}
+.instruction textarea{
+    width: 80%;
+    height: 60%;
+    margin-left: 10%;;
+}
+.add-notes{
+    font-size: 1.5rem;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:1rem;
+    justify-content: center;
+    display:block;
+    padding:0.7rem 2rem;
+    padding-top:1rem;
+    border-radius:1rem;
+}
+
+/* #subscribebox {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    height: 12rem;
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    padding-bottom:5rem; 
+  }
+  
+  .fa-envelope {
+    color:purple;
+    padding-right:1rem;
+  }
+  
+  #email-input {
+    width: 20rem;
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 5px 5px 1px rgba(236, 134, 151, 0.5);
+  }
+  
+  #submit {
+    background-color:white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 5px 5px 1px rgba(236, 134, 151, 0.5)
+  }
+  
+  #submit:hover {
+    font-weight: bolder;
+    background-color: var(--brightred);
+    transition: all 0.2s ease-out;
+  } */
+
+  
+
+  /* Payment page */
+  /* Payment page */
+  .payment-table{
+    height:8rem;
+  }
+
+  .payment-type{
+    background-color: var(--gentle-yellow);
+    margin-top: 5rem;
+    margin-right:auto;
+    margin-left:auto;
+    border: 3px solid green;
+
+    width: 60%;
+    line-height: 4rem;
+  }
+  .payment-type h3{
+    background-color: var(--gentle-yellow);
+  }
+
+  .select-payment-type,
+  .creditcard h3,
+  .creditcard textarea,
+  .google-pay-paypal{
+    /* border: 1px solid green; */
+    padding-left: 4rem;
+  }
+  .select-payment-type{
+    text-align: center;
+    line-height:5rem;
+    border:none;
+    background-color:var(--light-green);
+    font-weight: bold;
+    font-size: 2rem;
+    padding-right:2rem;
+  }
+  .creditcard h4{
+    margin-left: 8rem;
+  }
+
+  .creditcard textarea{
+    display:block;
+    margin-left:8rem;
+    padding-left:1rem;
+  }
+.google-pay-paypal{
+    margin-top: 3rem;
+}
+  .google-pay-paypal h4{
+    margin-left: 5rem;
+  }
+  .dot-favicon{
+    width:2rem;
+  }
+
+  .creditcard,
+  .google-pay-paypal{
+    position:relative;
+  }
+
+  .creditcard .dot-favicon{
+    position:absolute;
+    top:3%;
+    right:93%;
+  }
+  .google-pay-paypal .dot-favicon{
+    position:absolute;
+    top:20%;
+    right:93%;
+
+  }
+
+  /* Thanks Page */
+  /* Thanks Page */
+
+ 
+
+.favicon {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    padding-right: 10px;
+    align-self: center;
+    align-items: center;
+}
+
+.form{
+    width:60%;
+    margin-left: 20%;
+    padding-left:7%;
+    margin-top: 5rem;
+    height: 50rem;
+    border-radius: 3rem;
+ 
+background-color: rgb(159, 200, 159);
+}
+
+.form h3{
+    padding-right:25%;
+    padding-bottom:2rem;
+}
+
+
+/* .form,
+.form-items {
+    width: 100%;
+} */
+
+.form-items{
+    position:relative;
+}
+
+.form-items .input {
+    width: 38rem;
+    margin-bottom: 15px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 0;
+    border-radius: 30px;
+}
+
+.form-items.input.message {
+    height: 124px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    padding: 15px;
+    resize:none;
+}
+
+.form-items .fa {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.form button{
+
+    margin-left: 18%;
+        margin-top:0.5rem;
+        font-size: 2rem;
+        width: 20rem;
+        height: 4rem;
+        border-radius: 1.5rem;
+        background-color: yellow;
+        padding: 1rem, 2rem, 1rem, 2rem;
+        border: 3px solid red;
+    
+    
+}
+.social-section{
+    position:relative;
+}
+.social-icons{ 
+    position:absolute;
+    top:5%;
+    right:10%;
+    width: 17rem;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 2rem;
+}
+
+.social-icons .fa:hover {
+    color:salmon;
+    font:bold;
+}
+
+.social-icons div {
+    width: 50px;
+    height: 50px;
+    background: rgb(159, 200, 159);
+    border-radius: 50%;
+    border:1px solid green;
+    position: relative;
+}
+
+.social-icons .fa {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color:var(--dark-green)
 }

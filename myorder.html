@@ -45,52 +45,41 @@
 
         <section class="main">
             <section class="main-myorder">
-                <!-- <h1 class="myorder-h1"> - Payment method - </h1> -->
-                <table class="payment-table">
-                    <tr>
-                        <td>Order number</td>
-
-                        <td>######</td>
-                    </tr>
-                    <tr>
-                        <td>Total amount</td>
-
-                        <td>##</td>
-                    </tr>
-                    <tr>
-                        <td>Special notes</td>
-
-                        <td>no onions and chilli please.</td>
-                    </tr>
-
+                <h1 class="myorder-h1"> - My Order - </h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Price (NZD)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Flat White</td>
+                            <td> 1 </td>
+                            <td>4.5</td>
+                        </tr>
+                        <tr>
+                            <td>Soy</td>
+                            <td>1</td>
+                            <td>1.0</td>
+                        </tr>
+                        <tr>
+                            <td>Eggs on toast</td>
+                            <td>1</td>
+                            <td>13.5</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Sum</td>
+                            <td></td>
+                            <td>18.0</td>
+                        </tr>
+                    </tfoot>
                 </table>
-                <!-- <h3> ** The price is in NZD and gst included. **</h3> -->
-            </section>
-
-            <section class="payment-type">
-                <h3 class="select-payment-type"> - Select payment type -</h3>
-                <div class="creditcard">
-                    <img class="dot-favicon" src="../Files/dot-favicon.png" alt="">
-                    <h3> Credit Card ( Visa, Master & Amex) </h3>
-                    <h4>card number</h4><textarea placeholder="card number" name="card number" id="card-number"
-                        cols="30" rows="2.5"></textarea>
-                    <h4>name on card</h4>
-                    <textarea placeholder="name on card" name="name on card" id="name-on-card" cols="30"
-                        rows="2.5"></textarea>
-                    <h4>expiry date</h4>
-                    <textarea placeholder="(MM/YY)" name="expiry" id="expiry" cols="30" rows="2.5"></textarea>
-                    <h4>cvc</h4>
-                    <textarea placeholder="CVC" name="cvc" id="cvc" cols="5" rows="2.5"></textarea>
-                </div>
-                <div class="google-pay-paypal"><img class="dot-favicon" src="../Files/dot-favicon.png" alt="">
-                    <h3>Google pay</Bank>
-                        
-                </div>
-                <div class="google-pay-paypal"><img class="dot-favicon" src="../Files/dot-favicon.png" alt="">
-                    <h3>Paypal</Bank>
-                        
-                </div>
-                </div>
+                <h3> ** The price is in NZD and gst included. **</h3>
             </section>
 
 
@@ -103,14 +92,28 @@
 
             </section> -->
 
+            <div class="instruction">
+                <h3>** Send special notes to chef ** </h3>
+                <textarea placeholder="Notes..."></textarea>
+                <button class = "add-notes", "button">send</button>
+            </div>
 
 
-
+            <!-- <div id="subscribebox">
+                <h3>
+                    <i class="fa fa-envelope fa-p4x">
+                    </i>Join my newsletter
+                </h3>
+                <form>
+                    <input type="text" id="email-input" placeholder="Enter your email address">
+                    <input type="button" id="submit" value="Join"><a href="#"></a>
+                </form>
+            </div> -->
 
             <footer>
                 <section class="lunch-buttons">
-                    <button> Back to my order </button>
-                    <button> Confirm and Pay </button>
+                    <button> See other menu </button>
+                    <button> Check out </button>
                 </section>
             </footer>
 </body>
