@@ -1,3 +1,4 @@
+
 body{
   width: 82rem;
   height:100vh;
@@ -216,7 +217,8 @@ footer {
 .drink-buttons button,
 .cabinet-buttons button,
 .breakfast-buttons button,
-.lunch-buttons button{
+.lunch-buttons button,
+.back-buttons button{
   margin-left: 10.5rem;
   font-size: 1.8rem;
   font-style: lucida;
@@ -336,10 +338,11 @@ button:hover{
     grid-template-columns: 30% 30% 30%;
     grid-template-rows:33.3% 33.3% auto; 
     gap:3rem;
+
 }
 .cabinet-section section{
     background-color:var(--gentle-yellow);
-    height:32rem;
+    height:22rem;
     position:relative;
   box-shadow: 8px 8px 0 rgb(177, 182, 177);
   border-radius: 2rem;
@@ -352,12 +355,18 @@ button:hover{
     text-align:center;
     font-weight: bolder;
 }
+.cabinet-section-span{
+    position:absolute;
+    top: 84%;
+    right: 55%;
+
+}
 .cabinet-img{
     display:block;
     margin-right:auto;
     margin-left:auto;
     padding-bottom:1.5rem;
-    width:20rem;
+    width:15rem;
     height:12rem;
 }
 
@@ -376,7 +385,7 @@ button:hover{
     position:absolute;
     width: 8rem;
     height: 3.5rem;
-    top:85%;
+    top:78%;
     right:15%;
     border-radius: 1rem;
     background-color: var(--light-green);

@@ -1,5 +1,5 @@
 :root {
-  --darkgrey: #212824;
+  --darkgrey: rgb(33, 40, 36);
   --light-green: rgb(216, 225, 208);
   --medium-green:rgb(4, 114, 4);
   --darker-green: rgb(172, 181, 164);
