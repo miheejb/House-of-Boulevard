@@ -141,15 +141,18 @@
     flex-direction: row;
   }
   .menu-sections h3 {
+  
     padding: 2rem;
+    padding-left:1rem;
     text-align: center;
     font-size: 1.8rem;
   }
   .menu-sections img {
+    background-color: aqua;
     width: 24rem;
     height: 24rem;
     border-radius: 4rem;
-    margin-left: auto;
+    margin-left: 3rem;
     margin-right: auto;
     box-shadow: 8px 8px 0 rgb(177, 182, 177);
   }
@@ -160,9 +163,11 @@
   }
   .menu-buttons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap:2rem;
   }
-  .menu-buttons button {
+  .menu-buttons button, 
+  .drink-buttons button {
     width: 20rem;
   }
 
@@ -219,15 +224,18 @@
     right: 2%;
     background-color: var(--light-green);
   }
-  .drink-buttons {
+  .drink-buttons,
+  .back-buttons{
     width: 90%;
-    background-color: aquamarine;
+
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    gap:2rem;
+    flex-direction: column;
+    justify-content:center;
+    width: 50rem;
   }
   .drink-buttons button {
-    width: 30%;
+    width: 20rem;
   }
 
   /* Media Query Cabinet Dish Page */
@@ -241,7 +249,6 @@
     display:flex;
     flex-direction: column;
   }
-  .cabinet-section section,
   .breakfast-section section,
   .lunch-section section{
     height: 32rem;
@@ -250,12 +257,88 @@
     margin-right: auto;
     padding-bottom: 2rem;
   }
+.cabinet-section section{
+    height: 22rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem;
+}
 
   .cabinet-order-button {
     background-color: var(--light-green);
     margin-right: 7rem;
   }
-  .cabinet-buttons button{
+  .cabinet-buttons button, 
+{
     margin-left: 8rem;
   }
+
+/* Media query for Myorder */
+/* Media query for Myorder */
+
+.main-myorder div,
+.instruction{
+    width: 80%;
+    height: 27rem;
+}
+/* Media query for Payment */
+/* Media query for Payment */
+
+.main-payment{
+    width:80%;
+    height:15rem;
+}
+td{
+    width:50%
+}
+.payment-type{
+    width: 85%;
+    border:12px solid  rgb(165, 204, 165);
+}
+.creditcard h4,
+.creditcard textarea{
+    margin-left:3rem;
+}
+
+/* Media query for Feedback */
+
+.manager-note img,
+.manager-signature,
+.hidemsg {
+display:none;
+  }
+
+.form{
+    width:85%;
+    margin-left: auto;
+    margin-right:auto;
+    padding-left:7%;
+    margin-top: 5rem;
+    height: 50rem;
+    border-radius: 3rem;
+ 
+background-color: rgb(159, 200, 159);
+}
+
+.form h3{
+    padding-right:25%;
+    padding-bottom:2rem;
+}
+.form-itmes input,
+.form-items textarea{
+    width:20rem;
+    height:5rem;
+}
+.feedback-input{
+    width:50%;
+
+}
+
+.social-icons{ 
+margin-top:2rem;
+    top:100%;
+    right:20%;
+}
+
 }

@@ -5,39 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>House of Boulevard</title>
+    <link rel="shortcut icon" href="../Files/logo.jpeg">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <title>house of boulevard</title>
+
 </head>
 
 <body>
+
     <header>
         <nav>
             <div class="nav-logo">
-                <img class="logo-img" src="../Files/logo.jpeg" alt=" house of boulevard logo"></div>
+                <a href="../HTML/home.html">
+                    <img class=" logo-img" src="../Files/logo.jpeg" alt=" house of boulevard logo">
+                </a></div>
 
             <div>
                 <h1> House of Boulevard</h1>
             </div>
 
 
-            <div class="nav-hamburger"><img class="img-hamburger" src="../Files/Hamburger_icon.svg.png" alt=""></div>
-            <div class="nav-cart"><img class="img-cart" src="../Files/cart-icon.png" alt=""></div>
+            <div class="nav-hamburger"> <a href="../HTML/menu.html"><img class="img-hamburger" src="../Files/Hamburger_icon.svg.png" alt=""></a></div>
+            <div class="nav-cart"><a href="../HTML/myorder.html"><img class="img-cart" src="../Files/cart-icon.png" alt=""></a></div>
         </nav>
         <nav class="navigation-bar">
-            <section> <a href="../HTML/home.html"></a> home</section>
-            <section> <a href="../HTML/menu.html"></a> menu</section>
-            <section> <a href="../HTML/mycart.html"></a> my cart</section>
-            <section> <a href="../HTML/payment.html"></a> payment</section>
-            <section> <a href="../HTML/thanks.html"></a> feedback</section>
+            <section> <a href="../HTML/home.html">home</a></section>
+            <section> <a href="../HTML/menu.html">menu</a></section>
+            <section> <a href="../HTML/myorder.html">my order</a></section>
+            <section> <a href="../HTML/payment.html">payment</a></section>
+            <section> <a href="../HTML/thanks.html">feedback</a></section>
 
         </nav>
     </header>
 
     <main>
         <section class="table-number-qrcode">
-            <h3 class="menu-h3"> You are at table ### with QR code <img class="customer-qrcode"
-                    src="../Files/qr-code.png" alt=""></h3>
+            <h3 class="menu-h3">You are at table ### and QR code<img class="customer-qrcode"
+                src="../Files/qr-code.png" alt=""></h3>
         </section>
 
         <!-- Breakfast menu -->
@@ -91,11 +96,10 @@
 
     <footer>
 
-        <section class="lunch-buttons">
-            <button> See other menu</button>
-            <button> Go to my cart</button>
+        <section class="drink-buttons">
+            <button><a href="./menu.html">Menu</a></button>
+            <button><a href="./myorder.html">My Order</a></button>
         </section>
-
 
     </footer>
 
